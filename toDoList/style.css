@@ -9,8 +9,11 @@ body {
 }
 
 .to-dos {
-    width: 80%;
+    width: 30rem;
     height: 10rem;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5rem;
 }
 
 h1 {
