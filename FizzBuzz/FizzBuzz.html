@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios</title>
+</head>
+
+<body>
+    <main>
+        <!-- FizzBuzz -->
+        <!-- Divisível por 3 => 'Fizz', -->
+        <!-- Divisível por 5 => 'Buzz', -->
+        <!-- Divisível por 3 => 'FizzBuzz', -->
+        <!-- Se não for um número => 'não é um número' -->
+        <!-- Se não for um divisível por 3 nem por 5  => 'entrada' -->
+        <script type="text/javascript">
+            let resultado = fizzBuzz(11);
+            console.log(resultado)
+
+
+            function fizzBuzz(entrada) {
+
+                if (typeof entrada !== 'number') {
+                    return ('Nao é um número')
+                } else if ((entrada % 3 === 0) && (entrada % 5 == 0)) {
+                    return ('BuzzFizz');
+                } else if (entrada % 3 === 0) {
+                    return ('Fizz')
+                } else if (entrada % 5 === 0) {
+                    return ('Buzz')
+                } else {
+                    return (entrada)
+                }
+            }
+        </script>
+    </main>
+
+</body>
+
+</html>
