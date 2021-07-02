@@ -44,7 +44,7 @@ function render() {
 }
 
 function createList(name) {
-    return { id: Date.now().toString() name: name }
+    return { id: Date.now().toString(), name: name }
 }
 // Criar a lista, porém eu verifiquei que funciona sem o id. Pra quê serve o id aqui nessa lista? 
 
